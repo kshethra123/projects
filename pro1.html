@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>PES COLLEGE OF ENGINEERING</h1>
+    <h3>Using input tag</h3>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" 
+               name="username" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" 
+               name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" 
+               name="password" required>
+        <input type="submit" class="submitButton" 
+               id="submitButton" value="Submit">
+        <input type="reset" class="resetButton" 
+               id="resetButton" value="Reset">
+    </form>
+
+    <script>
+        document.addEventListener(
+              'DOMContentLoaded', function () {
+            document.getElementById('submitButton').
+            addEventListener('click', function () {
+                alert('Submit button clicked!');
+            });
+            document.getElementById('resetButton').
+            addEventListener('click', function () {
+                alert('Reset button clicked!');
+            });
+        });
